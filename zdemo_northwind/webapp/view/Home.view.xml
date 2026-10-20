@@ -1,0 +1,112 @@
+<mvc:View controllerName="com.demo.zdemonorthwind.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns:smartFilterBar="sap.ui.comp.smartfilterbar" 
+    xmlns:smartTable="sap.ui.comp.smarttable"
+    xmlns="sap.m">
+    
+    <Page id="page1" title="" class="sapUiSizeCompact" showHeader="false" showFooter="true">
+        <content>
+            <!-- Smart Filter Bar -->
+            <smartFilterBar:SmartFilterBar id="smartFilterBar1"  
+                entitySet="Orders"  
+                filterBarExpanded="true" 
+                showRestoreButton="false" 
+                showClearOnFB="false"
+                showFilterConfiguration="false" 
+                deltaVariantMode="true" 
+                enableBasicSearch="false"  
+                search="onSearch1"
+                initialized="onInitialise" 
+                persistencyKey="homeSFBPersistenceKey" 
+                afterVariantLoad="variantLoad">
+                
+                <smartFilterBar:layoutData>
+                    <FlexItemData shrinkFactor="0"/>
+                </smartFilterBar:layoutData>
+                
+                <smartFilterBar:controlConfiguration>
+                    <smartFilterBar:ControlConfiguration key="OrderID" visibleInAdvancedArea="true" label="Order ID" id="idOrder"
+                        preventInitialDataFetchInValueHelpDialog="false"></smartFilterBar:ControlConfiguration>
+                    <smartFilterBar:ControlConfiguration label="Order Date" key="OrderDate" controlType="date" filterType="interval"
+                        visibleInAdvancedArea="true" hasValueHelpDialog="false" conditionPanelDefaultOperation="BT">
+                    </smartFilterBar:ControlConfiguration>    
+                </smartFilterBar:controlConfiguration>
+            </smartFilterBar:SmartFilterBar>
+
+            <Panel class="sapUiLargeMarginTop" id="panelForGridList1" headerText="Industrial PTAT" backgroundDesign="Transparent" expandable="true" expanded="true">
+                <headerToolbar>
+                    <Toolbar id="idTool">
+                        <Title text="TAKT Adherence"/>
+                        <ToolbarSpacer /> 
+                        <Text text="Total=120" class="fontText"/> 
+                        <ToolbarSpacer/>
+                        <core:Icon src="sap-icon://circle-task-2" blocked="false" color="red" size="2.25rem" press="onStatusPress"/>
+                        <core:Icon blocked="false" src="sap-icon://circle-task-2" color="#E78C07" size="2.25rem" press="onStatusPress"/>
+                        <core:Icon blocked="false" src="sap-icon://circle-task-2" color="green" size="2.25rem" press="onStatusPress"/>
+                        <core:Icon src="sap-icon://circle-task-2" blocked="false" color="#427CAC" size="2.25rem" class="smallMarginEnd" press="onStatusPress"/>
+                    </Toolbar>
+                </headerToolbar>
+
+                <smartTable:SmartTable id="idLineItemsSmartTable" 
+                    smartFilterId="smartFilterBar1" 
+                    entitySet="Orders" 
+                    tableType="ResponsiveTable"
+                    showRowCount="true" 
+                    useExportToExcel="false" 
+                    useVariantManagement="false" 
+                    useTablePersonalisation="false" 
+                    demandPopin="true"
+                    enableAutoBinding="true" 
+                    placeToolbarInTable="false" 
+                    beforeRebindTable="onBeforeRebindTableMain">
+                    
+                    <Table id="idSampleTab" inset="false" alternateRowColors="true">
+                        <columns>
+                            <Column minScreenWidth="Tablet" demandPopin="true" hAlign="Begin" class="sapUiLargeMarginEnd">
+                                <core:CustomData 
+                                    key="p13nData" 
+                                    value='{"columnKey": "OrderID", "leadingProperty": "OrderID", "columnIndex": 0}' />
+                                <Text text="Order ID" />
+                            </Column>
+                            
+                            <Column minScreenWidth="Tablet" demandPopin="true" hAlign="Begin">
+                                <core:CustomData 
+                                    key="p13nData" 
+                                    value='{"columnKey": "ShipName", "leadingProperty": "ShipName", "columnIndex": 1}' />
+                                <Text text="Ship Name" />
+                            </Column>
+
+                            <Column minScreenWidth="Tablet" demandPopin="true" hAlign="Begin">
+                                <core:CustomData 
+                                    key="p13nData" 
+                                    value='{"columnKey": "OrderDate", "leadingProperty": "OrderDate", "columnIndex": 2}' />
+                                <Text text="Order Date" />
+                            </Column>
+
+                            <Column minScreenWidth="Tablet" demandPopin="true" hAlign="Begin">
+                                <core:CustomData 
+                                    key="p13nData" 
+                                    value='{"columnKey": "Status", "leadingProperty": "Status", "columnIndex": 3}' />
+                                <Text text="Status" />
+                            </Column>
+                        </columns>
+                        
+                        <items>
+                            <ColumnListItem type="Active" press="onOrderPress">
+                                <cells>
+                                    <ObjectNumber number="{OrderID}" unit="" press="onOrderIdPress" />
+                                    <Text text="{ShipName}" />
+                                    <Text text="{OrderDate}" />
+                                    <Text text="{Status}" />
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                </smartTable:SmartTable>
+            </Panel>
+        </content>
+    </Page>
+</mvc:View>
+
+

@@ -1,0 +1,27 @@
+{
+	"items": [{
+		"title": "SOA Delta",
+		"red": "less than 76%",
+		"amber": "76% - 94%",
+		"blue": "100%",
+		"green": "95% - 99%"
+	}, {
+		"title": "SLB Adherence",
+		"red": "less than 60%",
+		"amber": "60% - 79%",
+		"blue": "90% - 100%",
+		"green": "80% - 89%"
+	}, {
+		"title": "EOT",
+		"red": "less than 65%",
+		"amber": "65% - 74%",
+		"blue":  "90% - 100%",
+		"green": "75% - 89%"
+	}, {
+		"title": "CPA",
+		"red": "less than 80%",
+		"amber": "80% - 89%",
+		"blue": "100%",
+		"green": "90% - 99%"
+	}]
+}

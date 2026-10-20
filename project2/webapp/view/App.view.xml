@@ -1,0 +1,38 @@
+<mvc:View 
+    controllerName="action.project2.controller.App"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:form="sap.ui.layout.form">
+    
+        <!-- Added editable="true" and a Layout so it aligns nicely --> 
+         <form:SimpleForm 
+            id="idEmpForm"
+            editable="true" 
+            layout="ResponsiveGridLayout" 
+            title="Add New Employee"
+            >
+            
+            <!-- Explicitly defining the content aggregation -->
+            <form:content>
+                
+                <Label text="Emp No" required="true" />
+                <Input id="idEmpNo" placeholder="Enter Employee Number" value="{/empStr/empNo}" />
+                
+                <Label text="Emp Name" required="true" />
+                <Input id="idEmpName" placeholder="Enter Employee Name" value="{/empStr/empName}" />
+                
+                <Label text="Salary" />
+                <!-- Added type="Number" so mobile devices show the number keypad -->
+                <Input id="idSalary" type="Number" placeholder="Enter Salary"  />
+                
+                <Label text="Currency" required="true" />
+                <Input id="idCurr" placeholder="Enter Currency" />
+            </form:content>
+            
+        </form:SimpleForm>
+        <Button text="Click Me" press="onMagic"></Button>
+        
+
+
+</mvc:View>

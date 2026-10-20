@@ -1,0 +1,38 @@
+{
+	"items": [{
+		"title": "SOA Delta",
+		"subtitle": "Subtitle 1",
+		"status": "Information",
+		"type": "Active",
+		"unread":true
+	}, {
+		"title": "SLB Adherence",
+		"subtitle": "Subtitle 2",
+		"status": "Information",
+		"type": "Inactive",
+		"blocked" : true
+	}, {
+		"title": "All owrk certified before EOT(kpi value % hrs)",
+		"subtitle": "Subtitle 3",
+		"status": "Success",
+		"type": "Active"
+	}, {
+		"title": "Tactical Plan Update",
+		"subtitle": "Subtitle 4",
+		"status": "Error"
+	}, {
+		"title": "RTO Zone(number of operators)",
+		"subtitle": "Subtitle 5",
+		"status": "Warning"
+	}, {
+		"title": "Disruption/Andon",
+		"subtitle": "Subtitle 6"
+	}, 
+	{
+		"title": "Critical path adherence",
+		"subtitle": "Subtitle 6"
+	},{
+		"title": "STV",
+		"subtitle": "This is a long subtitle 7"
+	}]
+}

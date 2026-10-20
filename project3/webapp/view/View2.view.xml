@@ -1,0 +1,9 @@
+<mvc:View controllerName="oft.project3.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page2" title="{i18n>title}" showNavButton="True", navButtonPress="onBack">
+        <content>
+        <!-- <Button text="go back to view1" press="onBack"></Button> -->
+        </content>
+    </Page>
+</mvc:View>

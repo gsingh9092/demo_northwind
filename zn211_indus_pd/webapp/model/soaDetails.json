@@ -1,0 +1,70 @@
+{
+  "soaDetails": [
+    {
+      "MSN": "08572",
+      "Station": "D2N05R",
+      "StationDescription": "SA STAGE 02 NEO - STATION 05 STD",
+      "StartDate": "14.08.2018",
+      "EndDate": "14.08.2018",
+      "Takt": 0.00,
+      "DeltaHrs": 0.00,
+      "Percentage": 100,
+      "Status": ["red", "yellow", "green", "blue"]
+    },
+    {
+      "MSN": "08572",
+      "Station": "D2N06R",
+      "StationDescription": "SA STAGE 02 NEO - STATION 06 STD",
+      "StartDate": "14.08.2018",
+      "EndDate": "14.08.2018",
+      "Takt": 0.00,
+      "DeltaHrs": 0.00,
+      "Percentage": 100,
+      "Status": ["red", "yellow", "green", "blue"]
+    },
+    {
+      "MSN": "08572",
+      "Station": "D2N07L",
+      "StationDescription": "SA STAGE 02 NEO - STATION 07 PORT",
+      "StartDate": "14.08.2018",
+      "EndDate": "14.08.2018",
+      "Takt": 0.00,
+      "DeltaHrs": 0.00,
+      "Percentage": 100,
+      "Status": ["red", "yellow", "green", "blue"]
+    },
+    {
+      "MSN": "08572",
+      "Station": "D2N07R",
+      "StationDescription": "SA STAGE 02 NEO - STATION 07 STBD",
+      "StartDate": "14.08.2018",
+      "EndDate": "14.08.2018",
+      "Takt": 0.00,
+      "DeltaHrs": 0.00,
+      "Percentage": 100,
+      "Status": ["red", "yellow", "green", "blue"]
+    },
+    {
+      "MSN": "08572",
+      "Station": "D2N08L",
+      "StationDescription": "SA STAGE 02 NEO - STATION 08 PORT",
+      "StartDate": "14.08.2018",
+      "EndDate": "14.08.2018",
+      "Takt": 0.00,
+      "DeltaHrs": 0.00,
+      "Percentage": 100,
+      "Status": ["red", "yellow", "green", "blue"]
+    },
+    {
+      "MSN": "08572",
+      "Station": "D2N08R",
+      "StationDescription": "SA STAGE 02 NEO - STATION 08 STBD",
+      "StartDate": "14.08.2018",
+      "EndDate": "14.08.2018",
+      "Takt": 0.00,
+      "DeltaHrs": 0.00,
+      "Percentage": 100,
+      "Status": ["red", "yellow", "green", "blue"]
+    }
+  ]
+}

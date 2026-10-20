@@ -1,0 +1,94 @@
+{
+  "fruits": [
+    {
+      "name": "Apple",
+      "price": "20.00",
+      "unit": "INR",
+      "benefit": "Vitamin C",
+      "type": "Acidic",
+      "availability": "A",
+      "color": "Red"
+    },
+    {
+      "name": "Banana",
+      "price": "10.00",
+      "unit": "INR",
+      "benefit": "Rich in Potassium",
+      "type": "Sweet",
+      "availability": "A",
+      "color": "Yellow"
+    },
+    {
+      "name": "Orange",
+      "price": "25.00",
+      "unit": "INR",
+      "benefit": "Boosts Immunity",
+      "type": "Citrus",
+      "availability": "A",
+      "color": "Orange"
+    },
+    {
+      "name": "Mango",
+      "price": "50.00",
+      "unit": "INR",
+      "benefit": "Rich in Vitamin A",
+      "type": "Sweet",
+      "availability": "S",
+      "color": "Yellow"
+    },
+    {
+      "name": "Grapes",
+      "price": "40.00",
+      "unit": "INR",
+      "benefit": "Good for Heart",
+      "type": "Sweet",
+      "availability": "A",
+      "color": "Green"
+    },
+    {
+      "name": "Pineapple",
+      "price": "60.00",
+      "unit": "INR",
+      "benefit": "Aids Digestion",
+      "type": "Acidic",
+      "availability": "A",
+      "color": "Golden"
+    },
+    {
+      "name": "Watermelon",
+      "price": "30.00",
+      "unit": "INR",
+      "benefit": "Keeps Body Hydrated",
+      "type": "Sweet",
+      "availability": "S",
+      "color": "Green"
+    },
+    {
+      "name": "Papaya",
+      "price": "35.00",
+      "unit": "INR",
+      "benefit": "Improves Digestion",
+      "type": "Sweet",
+      "availability": "A",
+      "color": "Orange"
+    },
+    {
+      "name": "Strawberry",
+      "price": "80.00",
+      "unit": "INR",
+      "benefit": "Rich in Antioxidants",
+      "type": "Berry",
+      "availability": "S",
+      "color": "Red"
+    },
+    {
+      "name": "Kiwi",
+      "price": "90.00",
+      "unit": "INR",
+      "benefit": "High in Vitamin C",
+      "type": "Acidic",
+      "availability": "D",
+      "color": "Brown"
+    }
+  ]
+}

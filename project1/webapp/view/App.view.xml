@@ -1,0 +1,18 @@
+<mvc:View xmlns:form2="sap.ui.layout.form" controllerName="gaurav.project1.controller.App"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:form="sap.ui.layout.form">
+    <form:SimpleForm id="idForm">
+        <form:content>
+        <Label text="User Name"></Label>
+        <Input id="idUser"></Input>
+        <Label text="Password"></Label>
+        <Input id="idPwd" type="Password"></Input>
+        </form:content>
+    </form:SimpleForm>
+    <Button id="idBtn"   text="click me!" press="pressButton"  ></Button>
+    <!-- <App id="app">
+
+    </App> -->
+</mvc:View>

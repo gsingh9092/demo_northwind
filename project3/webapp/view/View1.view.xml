@@ -1,0 +1,43 @@
+<mvc:View controllerName="oft.project3.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <Page id="page1" title="{i18n>title}">
+        <headerContent>
+            <Button icon="sap-icon://action" press="onNext" />
+        </headerContent>
+
+        <!-- Page ka default aggregation 'content' hota hai, isliye <content> tag ki zaroorat nahi -->
+            <content>
+                <SearchField search="onSearch"></SearchField>
+                <List id="fruits" items="{/fruits}">
+                    <ObjectListItem intro="{benefits}" title="{name}" number="{price}" numberUnit="{unit}"></ObjectListItem>
+
+                </List>
+            </content>
+        
+        <List id="myList">
+            <items>
+                <!-- <DisplayListItem label="Apple" value="An apple a day keeps doctor away" />
+                
+                <StandardListItem title="Orange" description="Pulpy is best" />
+                
+                <!-- Label ko lowercase 'label' me fix kiya gaya hai -->
+                <InputListItem label="Which Fruit you want?">
+                    <content>
+                        <Input />
+                    </content>
+                </InputListItem>
+            
+                <!-- URL ke '&' ko '&amp;' me change kiya gaya hai -->
+                <ObjectListItem 
+                    intro="Rich in potassium" 
+                    title="Banana" 
+                    number="60" 
+                    numberUnit="Rs/Kg" 
+                    icon="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpDzVKtuWW7gfwqlUfrSTVFeSV8v27B37zVz40-vNa0A&amp;s=10" /> -->
+            </items>
+        </List>
+    </Page>
+
+</mvc:View>
